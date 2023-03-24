@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+.nav-head {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  color: #111111;
+  text-align: center;
+}
+.btn-primary-red {
+  background: #eb5757 !important;
+  padding: 25px 28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 16px;
+  color: #ffffff;
+}
+/* spinner css */
+.spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #585858;
+  transition: opacity 0.2s, visbility 0.2s;
+}
+.spinner-none {
+  opacity: 0;
+  visibility: hidden;
+}
+.spinner::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 10px solid #e7e7e7;
+  border-top-color: blueviolet;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* spinner css */
+/* css for card in main page */
+.btn-card {
+  background: #fef7f7;
+  border-radius: 50px;
+  color: #eb5757;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.card-footer {
+  background: #ffffff;
+}
+
+.card-feature {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  color: #111111;
+  margin-bottom: 4px;
+}
+.card-features-details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #585858;
+  display: inline-block;
+}
+.card-features-details > li {
+  padding-top: 5px;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 25px;
+
+  color: #111111;
+}
+.date {
+  font-weight: 500;
+  font-size: 16px;
+  color: #585858;
+}
+/* css for card in main page */
+
+/* css for modal */
+.my-card {
+  background: rgba(235, 87, 87, 0.05);
+  border: 1px solid #eb5757;
+  border-radius: 16px;
+}
+
+.my-card .card-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #111111;
+}
+.my-card .card-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.basic {
+  color: #03a30a;
+}
+.pro {
+  color: #f28927;
+}
+.enterprize {
+  color: #eb5757;
+}
+.price-card {
+  display: block;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 16px;
+  border-color: #ffffff;
+  text-align: center;
+}
+.my-card-light {
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.my-card-light .card-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  color: #111111;
+}
+.my-card-light .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #585858;
+}
+.btn-modal {
+  background: #eb5757 !important;
+  padding: 25px 28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 50px;
+  color: #ffffff;
+  transform: translate(35px, -35px);
+}
+.img-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #eb5757;
+  border-radius: 8px;
+  padding: 5px 15px;
+  width: 40%;
+  text-align: center;
+  transform: translate(-5px, 35px);
+}
+@media only screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1120px !important;
+  }
+  .btn-modal {
+    background: #eb5757 !important;
+    padding: 25px 28px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50px;
+    color: #ffffff;
+    transform: translate(35px, -35px);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .btn-modal {
+    transform: translate(5px, -5px);
+  }
+  #tool-details .my-row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .img-text {
+    padding: 3px 10px;
+    width: 50%;
+
+    transform: translate(-5px, 30px);
+  }
+}
+/* css for modal */
